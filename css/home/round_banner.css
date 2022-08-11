@@ -1,0 +1,97 @@
+.round_banner {
+  padding: 5.757rem 0 5.952rem;
+  color: var(--black);
+}
+.round_banner__body {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.round_banner__content {
+  width: 56rem;
+}
+.round_banner__content h4 {
+  font-weight: 700;
+  font-size: 1.4rem;
+  line-height: 1.7rem;
+  letter-spacing: 0.1rem;
+  text-transform: uppercase;
+  margin-bottom: 0.8rem;
+}
+.round_banner__content h2 {
+  font-family: "Philosopher";
+  font-style: normal;
+  font-weight: 700;
+  font-size: 6rem;
+  line-height: 6.4rem;
+  margin-bottom: 1.6rem;
+}
+.round_banner__content p {
+  font-weight: 500;
+  font-size: 1.4rem;
+  line-height: 170%;
+  margin-bottom: 2.2rem;
+}
+.round_banner__content a {
+  font-weight: 700;
+  font-size: 1.4rem;
+  line-height: 1.7rem;
+  letter-spacing: 0.1rem;
+  text-decoration-line: underline;
+  color: var(--black);
+}
+
+.round_banner__img {
+  width: 61.187rem;
+  height: 64.441rem;
+}
+.round_banner__img img {
+  width: 100%;
+}
+
+/* media */
+
+@media (max-width: 834px) {
+  .round_banner__img {
+    width: 52.187rem;
+    height: 40.441rem;
+  }
+
+  .round_banner__content h2 {
+    font-size: 4rem;
+    line-height: 5.4rem;
+    margin-bottom: 0.6rem;
+  }
+  .round_banner__content p {
+    font-size: 1.2rem;
+    line-height: 162%;
+    margin-bottom: 2rem;
+  }
+}
+@media (max-width: 530px) {
+  .round_banner__body {
+    flex-direction: column-reverse;
+  }
+
+  .round_banner__img {
+    width: 30.664rem;
+    height: 32.295rem;
+  }
+
+  .round_banner__content {
+    padding: 2.4rem 1.6rem 4.7rem;
+    margin-top: 1rem;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  .round_banner__content h2 {
+    font-size: 3rem;
+    line-height: 6.4rem;
+    margin-bottom: 0.6rem;
+  }
+  .round_banner__content p {
+    text-align: center;
+  }
+}

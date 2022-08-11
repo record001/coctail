@@ -1,0 +1,126 @@
+.product_list {
+  padding: 6.9rem 0 3.8rem;
+  color: var(--black);
+}
+.product_list__title {
+  font-family: "Philosopher";
+  font-style: normal;
+  font-weight: 700;
+  font-size: 70px;
+  line-height: 64px;
+  text-align: center;
+  margin-bottom: 5.9rem;
+}
+.product_list .swiper_btn {
+  display: none;
+}
+.product_list .swiper {
+  width: 100%;
+  height: 100%;
+}
+
+.product_list .swiper-slide {
+  text-align: center;
+  font-size: 18px;
+  background: #fff;
+
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: -webkit-flex;
+  display: flex;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  -webkit-justify-content: center;
+  justify-content: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  -webkit-align-items: center;
+  align-items: center;
+}
+
+.product_list .swiper-slide img {
+  display: block;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+/* card */
+.product_list .swiper-slide {
+  width: 34rem;
+  height: 48.7rem;
+  display: flex;
+  flex-direction: column;
+}
+.product__img {
+  width: 50% !important;
+}
+.product__title {
+  font-family: "Philosopher";
+  font-weight: 700;
+  font-size: 27px;
+  line-height: 30px;
+  text-align: center;
+  margin-bottom: 1.5rem;
+}
+.product__description {
+  font-family: "Montserrat";
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 170%;
+  text-align: center;
+  margin-bottom: 1.6rem;
+}
+.product__cta {
+  font-weight: 700;
+  font-size: 14px;
+  line-height: 17px;
+
+  text-align: center;
+  letter-spacing: 0.1em;
+  text-decoration-line: underline;
+  text-transform: uppercase;
+}
+.product__cta:hover {
+  color: #bb6b1e;
+}
+
+/* media */
+
+@media (max-width: 600px) {
+  .product_list__title {
+    font-weight: 700;
+    font-size: 3.5rem;
+    line-height: 6.4rem;
+  }
+  .product__title {
+    font-weight: 700;
+    font-size: 2rem;
+    line-height: 2.2rem;
+  }
+  .product_list .swiper_btn {
+    display: block;
+  }
+  .product_list {
+    position: relative;
+  }
+  .product_list .swiper-button-prev {
+    left: 2.7rem;
+    right: auto;
+    top: 11.1rem;
+  }
+  .product_list .swiper-button-next
+   {
+    right: 2.7rem;
+    left: auto;
+    top: 11.1rem;
+
+  }
+
+  .swiper-button-prev:after {
+    font-size: 28px;
+  }
+  .swiper-button-next:after {
+    font-size: 28px;
+  }
+}
