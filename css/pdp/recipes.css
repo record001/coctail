@@ -1,0 +1,42 @@
+.recipes {
+  background-color: #fffbf7;
+  padding: 4rem 0 8rem;
+  color: var(--black);
+}
+.recipes h4 {
+  font-weight: 700;
+  font-size: 1.2rem;
+  line-height: 1.5rem;
+
+  text-align: right;
+  letter-spacing: 0.1em;
+  text-transform: uppercase;
+
+}
+.recipes__line {
+    border-bottom: 1px solid #CBCBCB;
+    padding-bottom: 1.7rem;
+}
+.card__img-bg {
+   height: 100%;
+}
+.recipes__slider {
+    height: 60rem;
+    margin-top: 4rem;
+    padding-left: 6rem;
+}
+.recipes__card {
+    position: relative;
+    height: 100%;
+    display: flex;
+}
+.recipes__card .card__img{
+    position: relative;
+    
+}
+.recipes__card .card__img .funkin{
+    position: absolute;
+    right: -66px;
+    top: 56px;
+}
+    

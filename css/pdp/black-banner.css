@@ -1,0 +1,37 @@
+.black-banner {
+  background-color: var(--black);
+  padding: 8rem 0;
+}
+.black-banner__grid {
+  display: grid;
+  grid-template-columns: 50% 50%;
+}
+.black-banner__img img {
+  width: 100%;
+}
+.black-banner__content {
+    padding-right: 6.8rem;
+}
+.black-banner__content h2 {
+  font-family: "Philosopher";
+  font-style: normal;
+  font-weight: 700;
+  font-size: 7rem;
+  line-height: 7.8rem;
+  margin-bottom: 14.2rem;
+  color: #ffffff;
+}
+.black-banner__content h4 {
+  font-weight: 700;
+  font-size: 1.2rem;
+  line-height: 1.5rem;
+  letter-spacing: 0.1em;
+  text-transform: uppercase;
+  color: #eae5dd;
+  margin-bottom: 1.7rem;
+}
+.black-banner__content p {
+    font-size: 1.4rem;
+    line-height: 170%;
+    color: #FFFFFF;
+}

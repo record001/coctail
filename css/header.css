@@ -1,5 +1,6 @@
 .header {
   color: var(--black);
+  height: 100%;
 }
 .header__announcement_bar {
   padding: 0.8rem 0;
@@ -54,9 +55,12 @@
 
   color: var(--black);
 }
+
+/* header for HOME page */
 .header__hero {
   display: grid;
   grid-template-columns: 50% 50%;
+  height: calc(100vh - 105px);
 }
 .header__hero__banner {
   background-image: url("../images/home/coctail-hero.png");
@@ -66,8 +70,10 @@
 }
 
 .header__hero__content {
-  height: 92.2rem;
+ background-color: #FFFBF7;
+  /* height: 61.2rem; */
   position: relative;
+  z-index: -1;
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -104,7 +110,7 @@
 }
 .header__hero__content__img {
   position: absolute;
-  z-index: -1;
+  z-index: -2;
 }
 .header__burger,
 .header__bucket {

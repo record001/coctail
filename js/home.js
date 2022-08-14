@@ -23,7 +23,7 @@ renderProductsToSlider()
 
 
 
-var swiper = new Swiper(".mySwiper", {
+ new Swiper(".mySwiper", {
     slidesPerView: 4,
     spaceBetween: 30,
     slidesPerGroup: 1,
@@ -55,7 +55,7 @@ var swiper = new Swiper(".mySwiper", {
     
   });
 
-  var swiper1 = new Swiper(".mySwiper1", {
+ new Swiper(".mySwiper1", {
     slidesPerView: 3,
     // spaceBetween: 60,
     slidesPerGroup: 1,
