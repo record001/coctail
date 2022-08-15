@@ -1,0 +1,59 @@
+.variety-banner {
+  padding: 4rem 0;
+}
+.variety-banner-grid {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.variety-banner__content {
+  color: var(--black);
+  padding: 0 8rem 0 4rem;
+  width: 68rem;
+  height: 68rem;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: center;
+}
+.variety-banner__content h4 {
+  font-family: "Manrope";
+  font-weight: 700;
+  font-size: 1.2rem;
+  line-height: 1.6rem;
+  letter-spacing: 0.1em;
+  text-transform: uppercase;
+  margin-bottom: 0.8rem;
+}
+.variety-banner__content h2 {
+  font-family: "Philosopher";
+  font-weight: 700;
+  font-size: 5.5rem;
+  line-height: 148%;
+  margin-bottom: 1.6rem;
+}
+.variety-banner__content p {
+  font-family: "Manrope";
+  font-weight: 400;
+  font-size: 1.4rem;
+  line-height: 170%;
+  margin-bottom: 4rem;
+}
+.variety-banner__content a {
+  font-weight: 700;
+  font-size: 1.4rem;
+  line-height: 1.7rem;
+  letter-spacing: 0.1em;
+  text-decoration-line: underline;
+  text-transform: uppercase;
+  color: var(--black);
+}
+.variety-banner__img {
+    background-image: url(../../images/pdp/vatiety-banner.png);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+  width: 61.187rem;
+  height: 64.441rem;
+  border-radius: 60% 40% 50% 46% / 60% 39% 61% 40%;;
+}

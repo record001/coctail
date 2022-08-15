@@ -41,3 +41,16 @@ new Swiper(".mySwiper", {
     },
     
   });
+
+  new Swiper(".mySwiper-recipe", {
+    // spaceBetween: 100,
+    slidesPerView: 2,
+    navigation: {
+      nextEl: ".swiper-button-next",
+      prevEl: ".swiper-button-prev",
+    },
+    pagination: {
+      el: ".swiper-pagination",
+      clickable: true,
+    },
+  });

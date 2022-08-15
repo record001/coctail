@@ -4,6 +4,8 @@
 @import "./pdp/ingredients.css";
 @import "./pdp/black-banner.css";
 @import "./pdp/recipes.css";
+@import "./pdp/variety-banner.css";
+@import "./pdp/QA.css";
 
 
 .header__hero--plp {
