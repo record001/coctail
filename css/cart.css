@@ -337,6 +337,7 @@ html {
 .toggle {
   margin-top: 1rem;
   margin-left: auto;
+  cursor: pointer;
 }
 
 .gift__cta--mob {
@@ -355,7 +356,6 @@ html {
 }
 .mob-wrapper {
     display: flex;
-    align-items: center;
     justify-content: space-between;
 }
 .remove-cart--mob {
