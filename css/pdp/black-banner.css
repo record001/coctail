@@ -10,7 +10,7 @@
   width: 100%;
 }
 .black-banner__content {
-    padding-right: 6.8rem;
+  padding-right: 6.8rem;
 }
 .black-banner__content h2 {
   font-family: "Philosopher";
@@ -31,7 +31,38 @@
   margin-bottom: 1.7rem;
 }
 .black-banner__content p {
-    font-size: 1.4rem;
-    line-height: 170%;
-    color: #FFFFFF;
+  font-size: 1.4rem;
+  line-height: 170%;
+  color: #ffffff;
+}
+.black-banner__img h2 {
+  display: none;
+}
+
+/* media */
+
+@media (max-width: 600px) {
+  .black-banner__grid {
+    display: flex;
+    flex-direction: column-reverse;
+  }
+  .black-banner__content h2 {
+    display: none;
+  }
+  .black-banner__img {
+    margin-bottom: 2.4rem;
+  }
+  .black-banner__img h2 {
+    display: block;
+    text-align: center;
+    font-family: "Philosopher";
+    font-weight: 700;
+    font-size: 3.2rem;
+    line-height: 3.6rem;
+    color: #ffffff;
+    margin-bottom: 1.8rem;
+  }
+  .black-banner {
+    padding: 4rem 0;
+}
 }

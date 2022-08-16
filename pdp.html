@@ -28,6 +28,8 @@
       rel="stylesheet"
       href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/3.3.7/css/bootstrap.min.css"
     />
+
+    
     <link
       rel="stylesheet"
       href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.6.3/css/font-awesome.min.css"
@@ -38,11 +40,15 @@
     <link rel="stylesheet" href="./css/pdp.css" />
     <!-- Link Swiper's JS -->
 
-    <script src="https://cdn.jsdelivr.net/npm/swiper/swiper-bundle.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/swiper/swiper-bundle.min.js" ></script>
 
     <!-- JS files -->
     <script src="./js/products.js" defer></script>
     <script src="./js/pdp.js" defer></script>
+
+    <!-- QA accordion sources -->
+    <link rel="stylesheet" href="//code.jquery.com/ui/1.13.2/themes/base/jquery-ui.css">
+    
 
     <title>Coctail | Product Details</title>
   </head>
@@ -139,6 +145,9 @@
                 <p class="product__text">124 reviews</p>
               </div>
 
+              <h3 class=" product__price--mob">$35.59</h3>
+
+
               <p class="product__text border-top">
                 Made with natural birch, Strawberry and Apricot, an earthy and
                 fruity taste.
@@ -166,7 +175,7 @@
             </div>
 
             <div class="product__slider">
-              <div class="swiper mySwiper">
+              <div class="swiper mySwiper-hero">
                 <div class="swiper-wrapper">
                   <div class="swiper-slide">
                     <img src="./images/plp/funkin.png" alt="funkin" />
@@ -189,7 +198,7 @@
             </div>
 
             <div class="product__info">
-              <h3>$35.59</h3>
+              <h3 class="product__price">$35.59</h3>
               <p class="bold-text border-top">adaptogenic Ingredients</p>
               <div class="product__ingredients">
                 <img
@@ -326,6 +335,21 @@
                   </div>
                 </div>
               </div>
+
+              <div class="product__socials product__socials--mob">
+                <span class="product__text">Share on</span>
+                <a href="#!"
+                  ><img src="./images/pdp/fb.svg" alt="facebook"
+                /></a>
+                <a href="#!"><img src="./images/pdp/p.svg" alt="p " /></a>
+                <a href="#!"
+                  ><img src="./images/pdp/email.svg" alt="Email"
+                /></a>
+              </div>
+              <a href="#!" class="product__cta product__cta--mob"
+                >Shop the can
+                <i class="fa-solid fa-arrow-right-long"></i>
+              </a>
             </div>
           </div>
         </div>
@@ -404,6 +428,8 @@
               </p>
             </div>
             <div class="black-banner__img">
+              <h2>How to enjoy</h2>
+
               <img src="./images/pdp/limon-coctail.png" alt="limon-coctail" />
             </div>
           </div>
@@ -451,72 +477,7 @@
       
                 </div>
               </div>
-              <div class="swiper-slide">
-                <div class="recipes__card">
-
-                  <div class="card__img">
-                    <picture>
-                      
-                      <source
-                        media="(max-width:600px)"
-                        srcset="./images/pdp/recipe-mob.png"
-                      />
-                      <img class="card__img-bg"
-                        src="./images/pdp/limon-coctail.png"
-                        alt="Flowers"
-                       
-                      />
-                    </picture>
-      
-                    <img class="funkin" src="./images/plp/funkin.png" alt="funkin">
-                  </div>
-                  <div class="card__content">
-                      <h2>Tom Collins Jr.</h2>
-                      <h3>Ingredients</h3>
-                      <ul>
-                        <li>3 oz Riverine</li>
-                        <li>3/4 oz Lemon Juice</li>
-                        <li>3/4 oz Simple Syrup</li>
-                        <li>Club Soda</li>
-                      </ul>
-                      <a href="#!">View Full recipe</a>
-                  </div>
-      
-                </div>
-              </div>
-              <div class="swiper-slide">
-                <div class="recipes__card">
-
-                  <div class="card__img">
-                    <picture>
-                      
-                      <source
-                        media="(max-width:600px)"
-                        srcset="./images/pdp/recipe-mob.png"
-                      />
-                      <img class="card__img-bg"
-                        src="./images/pdp/recipe.png"
-                        alt="Flowers"
-                       
-                      />
-                    </picture>
-      
-                    <img class="funkin" src="./images/plp/funkin.png" alt="funkin">
-                  </div>
-                  <div class="card__content">
-                      <h2>Tom Collins Jr.</h2>
-                      <h3>Ingredients</h3>
-                      <ul>
-                        <li>3 oz Riverine</li>
-                        <li>3/4 oz Lemon Juice</li>
-                        <li>3/4 oz Simple Syrup</li>
-                        <li>Club Soda</li>
-                      </ul>
-                      <a href="#!">View Full recipe</a>
-                  </div>
-      
-                </div>
-              </div>
+              
               <div class="swiper-slide">
                 <div class="recipes__card">
 
@@ -584,6 +545,7 @@
                 </div>
               </div>
               
+              
              
             </div>
             <div class="swiper-button-next">Next
@@ -649,15 +611,106 @@
 
         <section class="QA">
           <div class="container">
-              <h2>Frequently
+            <div class="QA__grid">
+
+           
+              <h2 class="QA__title">Frequently
                 Asked 
                 Questions</h2>
 
                 <div class="QA__wrapper">
-                  
+                  <div id="accordion1">
+                    <h3>What’s inside the bottle?</h3>
+                    <div>
+                      <p>Medium-bodied is made with the following 14 botanicals: Strawberry, Birtch root, Apricot...etc. Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna.</p>
+                    </div>
+                    <h3>How is it made?</h3>
+                    <div>
+                      <p>Sed non urna. Donec et ante. Phasellus eu ligula. Vestibulum sit amet purus. Vivamus hendrerit, dolor at aliquet laoreet, mauris turpis porttitor velit, faucibus interdum tellus libero ac justo. Vivamus non quam. In suscipit faucibus urna. </p>
+                    </div>
+                    <h3>how do you drink medium-bodied?</h3>
+                    <div>
+                      <p>Nam enim risus, molestie et, porta ac, aliquam ac, risus. Quisque lobortis. Phasellus pellentesque purus in massa. Aenean in pede. Phasellus ac libero ac tellus pellentesque semper. Sed ac felis. Sed commodo, magna quis lacinia ornare, quam ante aliquam nisi, eu iaculis leo purus venenatis dui. </p>
+                     
+                    </div>
+                    <h3>can i drink medium-bodied when i amd pragnant or driving?</h3>
+                    <div>
+                      <p>Cras dictum. Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia Curae; Aenean lacinia mauris vel est. </p>
+                    </div>
+                    <h3>How long does a bottle keep?</h3>
+                    <div>
+                      <p>Cras dictum. Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia Curae; Aenean lacinia mauris vel est. </p>
+                    </div>
+                  </div>     
+                                
                 </div>
+
+            </div>
           </div>
         </section>
+
+          <section class="product-list">
+            <div class="swiper-button-next">
+              <i class="fa-solid fa-arrow-right-long"></i>
+            </div>
+            <h2>You might also like...</h2>
+
+            <div class="swiper-button-prev">
+              <i class="fa-solid fa-arrow-left-long"></i>
+            </div>
+            <div class="container">
+
+                <div class="product-list__wrapper">
+
+                  <div class="swiper mySwiper">
+                    <div class="swiper-wrapper product-wrapper">
+                      <!-- <div class="swiper-slide ">
+                        <div class="product-card">
+                            <img class="card__title" src="./images/plp/funkin.png" alt="funkin">
+                            <h4>Full - bodied</h4>
+                            <p>Bottle</p>
+                            <div class="stars">
+                              <img src="./images/plp/Star-fill.svg" alt="star">
+                              <img src="./images/plp/Star-fill.svg" alt="star">
+                              <img src="./images/plp/Star-fill.svg" alt="star">
+                              <img src="./images/plp/Star-fill.svg" alt="star">
+                              <img src="./images/plp/Star-fill.svg" alt="star">
+
+                              <span>(32 reviews)</span>
+                            </div>
+
+                            <span>$35.59</span>
+                            <a href="#!">Shop now</a>
+                        </div>
+                      </div> -->
+                      
+                      
+                    </div>
+                   
+                  </div>
+
+
+<!-- 
+                    <div class="product-card">
+                      <img src="./images/plp/funkin.png" alt="funkin">
+                      <h4>Full - bodied</h4>
+                      <p>Bottle</p>
+                      <div class="stars">
+                        <img src="./images/plp/Star-fill.svg" alt="star">
+                        <img src="./images/plp/Star-fill.svg" alt="star">
+                        <img src="./images/plp/Star-fill.svg" alt="star">
+                        <img src="./images/plp/Star-fill.svg" alt="star">
+                        <img src="./images/plp/Star-fill.svg" alt="star">
+
+                        <span>(32 reviews)</span>
+                      </div>
+
+                      <p>$35.59</p>
+                      <a href="#!">Shop now</a>
+                    </div> -->
+                </div>
+            </div>
+          </section>
 
       <section class="join_us">
         <h2>Join us @сocktail</h2>
@@ -744,8 +797,20 @@
     src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.1.0/jquery.min.js"
     type="application/javascript"
   ></script>
+  
   <script
     src="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/3.3.7/js/bootstrap.min.js"
     type="application/javascript"
   ></script>
+
+  <script src="https://code.jquery.com/jquery-3.6.0.js"> </script>
+  <script src="https://code.jquery.com/ui/1.13.2/jquery-ui.js"></script>
+    <script>
+    $( function() {
+      $( "#accordion1" ).accordion({
+        collapsible: true
+      });
+    } );
+    </script>
+  
 </html>

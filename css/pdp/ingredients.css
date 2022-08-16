@@ -14,6 +14,11 @@
   width: 72rem;
   margin: 0 auto 3.9rem;
 }
+.ingredients__text span{
+font-weight: 700;
+letter-spacing: 0.1em;
+text-transform: uppercase;
+}
 .ingredients p {
   font-weight: 400;
   font-size: 1.4rem;
@@ -49,4 +54,50 @@
 
 .ingredients__slider .swiper-pagination {
   display: none;
+}
+
+/* media */ 
+
+@media(max-width:600px) {
+  .ingredients {
+    padding: 4rem 0;
+}
+  .ingredients h2 {
+    font-size: 2.8rem;
+  }
+  .ingredients p {
+    font-size: 1.2rem;
+    
+}
+.ingredients__text {
+  width: 100%;
+}
+.ingredients__slider .swiper-pagination {
+  display: block;
+}
+.ingredients__card img {
+  width: 12rem;
+  height: 12rem;
+}
+.ingredients__card h4 {
+  margin: 1.6rem 0 1rem;
+  
+  font-size: 2.4rem;
+  line-height: 2.7rem;
+}
+.ingredients__card p {
+  font-size: 1.4rem;
+}
+.ingredients__card {
+  padding-bottom: 1rem;
+}
+.ingredients__cta  {
+  display: none;
+}
+.ingredients__slider .swiper {
+  height: 30rem;
+}
+.swiper-pagination-bullet-active {
+  background-color: var(--black);
+}
 }

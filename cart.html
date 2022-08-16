@@ -1,0 +1,323 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- fontawesome -->
+    <script
+      src="https://kit.fontawesome.com/67f25412d3.js"
+      crossorigin="anonymous"
+    ></script>
+
+    <!-- font family -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Manrope:wght@400;700&family=Montserrat:wght@400;500;600;700;900&family=Philosopher:wght@700&family=Poppins:wght@400;500;600;700&display=swap"
+      rel="stylesheet"
+    />
+    
+    <script src="./js/cart.js" defer></script>
+    <!-- inner styles -->
+    <link rel="stylesheet" href="./css/reset.css" />
+    <link rel="stylesheet" href="./css/cart.css" />
+
+
+    <title>Coctail | Cart</title>
+  </head>
+  <body>
+    <header class="header">
+      <div class="header__announcement_bar_wrapper">
+        <div class="container header__announcement_bar">
+          <img src="./images/home/toLeft.svg" alt="toLeft icon" />
+          <p>
+            Free domestic shipping on orders over $50
+            <a href="#!">Learn more</a>
+          </p>
+          <img src="./images/home/toRight.svg" alt="toRight icon" />
+        </div>
+      </div>
+
+      <div class="container">
+        <nav class="header__nav nav">
+          <img class="header__burger" src="./images/home/burger.svg" alt="burger">
+          <ul class="nav__list">
+            <li class="nav__item">
+              <a target="_blank" class="nav__link" href="./plp.html"
+                >Shop <img src="./images/home/Down.svg" alt="Down"
+              /></a>
+            </li>
+            <li class="nav__item"><a class="nav__link" href="#!">About </a></li>
+            <li class="nav__item">
+              <a class="nav__link" href="#!"
+                >Fun stuff <img src="./images/home/Down.svg" alt="Down"
+              /></a>
+            </li>
+            <li class="nav__item">
+              <a class="nav__link" href="#!">Find us</a>
+            </li>
+          </ul>
+
+          <a class="header__logo" href="#!">
+            <img src="./images/home/Сocktail.svg" alt="Сocktail"
+          /></a>
+
+          <ul class="nav__list">
+            <li class="nav__item">
+              <a class="nav__link" href="#!"
+                ><img class="usa" src="./images/home/usa.svg" alt="usa" /> Usa
+                <img src="./images/home/Down.svg" alt="Down"
+              /></a>
+            </li>
+            <li class="nav__item">
+              <a class="nav__link" href="#!">contact </a>
+            </li>
+            <li class="nav__item"><a class="nav__link" href="#!">Log in</a></li>
+            <li class="nav__item">
+              <a class="nav__link" href="./cart.html" target="_blank"
+                ><img src="./images/home/bucket.svg" alt="bucket"
+              /></a>
+            </li>
+          </ul>
+
+          <a class="header__bucket" href="./cart.html" target="_blank"
+                ><img src="./images/home/bucket.svg" alt="bucket"
+              /></a>
+        </nav>
+      </div>
+
+    </header>
+
+    <main>
+        <section class="cart">
+            <div class="container">
+              
+              <h2>My Bag</h2>
+              
+    
+              <div class="cart__body">
+                <div class="cart__headline">
+                  <span>Product</span>
+                  <span>Price</span>
+                  <span>QTY</span>
+                  <span>Total</span>
+                </div>
+    
+                <div class="cart__product-details cart__product">
+                  <div class="cart__product__img">
+                    <img src="./images/plp/funkin.png" alt="funkin" />
+                  </div>
+    
+                  <div class="cart__product__info">
+                    <div class="cart__product__title-wrapper">
+                      <h4 class="cart__product__title">
+                        Medium-bodied <span class="prcie-mob">$28.00</span>
+                      </h4>
+                      <p>1 bottle <span class="old-price-mob">$30.00</span></p>
+                      <p>Delivery every 1 month</p>
+                      <a class="remove-cart" href="#!">Remove</a>
+                    </div>
+    
+                    <h4 class="cart__product__price">$28.00 </h4>
+                    <div class="mob-wrapper">
+                         <div class="cart__product__qty">
+                      <i id="minus" class="fa-solid fa-minus"></i>
+                      <span id="count" class="count">1</span>
+                      <i id="plus" class="fa-solid fa-plus"></i>
+                    </div>
+
+                    <a class="remove-cart   remove-cart--mob" href="#!">Remove</a>
+
+                    </div>
+                   
+    
+    
+    
+                    <h4 class="cart__product__price total">$28.00 </h4>
+    
+                  </div>
+    
+    
+                </div>
+                
+                <div class="cart__product-details cart__product">
+                  <div class="cart__product__img">
+                    <img src="./images/plp/funkin.png" alt="funkin" />
+
+                  </div>
+    
+                  <div class="cart__product__info">
+                    <div class="cart__product__title-wrapper">
+                      <h4 class="cart__product__title">
+                        Light-bodied  <span class="prcie-mob">$28.00</span>
+                      </h4>
+                      <p>2 bottles</p>
+
+                      <a class="remove-cart"  href="#!">Remove</a>
+                    </div>
+    
+                    <h4 class="cart__product__price">$28.00 </h4>
+                    <div class="mob-wrapper">
+                        <div class="cart__product__qty">
+                     <i id="minus" class="fa-solid fa-minus"></i>
+                     <span id="count" class="count">1</span>
+                     <i id="plus" class="fa-solid fa-plus"></i>
+                   </div>
+
+                   <a class="remove-cart   remove-cart--mob" href="#!">Remove</a>
+
+                   </div>
+    
+                    <h4 class="cart__product__price total">$28.00 </h4>
+    
+                  </div>
+    
+    
+                </div>
+                
+    
+    
+              </div>
+    
+              <div class="cart__checkout">
+                <div class="cart__order-notes">
+                        <div class="gift-wrapper">
+                                <img src="./images/cart/gift.svg" alt="gift">
+                                <h4>Sending a gift?</h4>
+                                <h4 class="gift__cta--mob">Add message <img src="./images/cart/left-arrow.svg" alt="arrow"></h4>
+                                <a class="gift__cta" href="#!">Remove</a>
+                        </div>
+    
+                    <textarea placeholder="Happy 25th Birthday Eddie! Hope you have a wonderful celebration!!!"></textarea>
+
+                    <button class="cart-btn cart-btn--save">save message </button>
+
+                    <a class="cart-cancel" href="#!">Cancel</a>
+
+                    <div class="add-cart">
+                            <h3>You might also like</h3>
+                            <div class="add-cart__wrapper">
+
+                        
+                            <div class="add-cart__img">
+                                <img src="./images/plp/funkin.png" alt="funkin">
+                            </div>
+
+                            <div class="add-cart__content">
+                                <div class="add-cart__title">
+                                    <h4>Full-bodied</h4>
+                                     <p>$35.59</p>
+                                </div>
+                                <p>1 bottle</p>
+                                <button class="add-cart__btn">Add to cart</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+    
+                <div class="cart__total-price-calc">
+                    <div class="cart__subtotal-price d-f">
+                        <h4>Subtotal</h4>
+                        <h4>$99.18</h4>   
+                    </div>
+                    <p>Shipping & tax calculated at checkout</p>
+                    
+                    <div class="shipping-rate">
+                        <div class="shipping-rate-fill"></div>
+                    </div>
+
+                    <p><span>$5.00</span> away from free shipping</p>
+                  
+                    <div class="cart__protection">
+                        <div class="protection__content">
+                            <div class="protection__images">
+                                <img src="./images/cart/package.svg" alt="package">
+                                <h3>Package protection</h3>
+                                <img src="./images/cart/protection.svg" alt="protection">
+                            </div>
+
+                            <p>For damage, lost & theft for <span>$0.99</span></p>
+                        </div>
+
+                        <img class="toggle" src="./images/cart/toggle.svg" alt="toggle">
+                    </div>
+                    <button class="cart-btn">Checkout</button>
+                </div>
+              </div>
+            </div>
+          </section>
+    </main>
+
+    <footer class="footer">
+      <div class="container">
+
+        <div class="footer__body">
+
+          <div class="footer__form">
+            <h2>Newsletter</h2>
+            <p>Sign up to save 10% on your next order</p>
+
+            <div class="footer__email" >
+              <input type="email" placeholder="Email Address">
+              <img src="./images/home/arrow_to_right.svg" alt="arrow">
+            </div>
+
+            <div class="footer__icons">
+              <img src="./images/home/instagram.svg" alt="instagram">
+              <img src="./images/home/facebook.svg" alt="facebook">
+              <img src="./images/home/pi.svg" alt="pi">
+              <img src="./images/home/twitter.svg" alt="twitter">
+              <img src="./images/home/youTube.svg" alt="youTube">
+            </div>
+
+          </div>
+  
+          <div class="footer__nav-wrapper">
+              <div class="footer__nav">
+                <h4>explore</h4>
+                <ul>
+                  <li><a href="#!">Account</a></li>
+                  <li><a href="#!">Gift Card</a></li>
+                  <li><a href="#!">Refer a Friend</a></li>
+                  <li><a href="#!">Affiliates</a></li>
+                  <li><a href="#!">Corporate Gifting</a></li>
+                </ul>
+              </div>
+              <div class="footer__nav">
+                <h4>get help</h4>
+                <ul>
+                  <li><a href="#!">Shop</a></li>
+                  <li><a href="#!">FAQ</a></li>
+                  <li><a href="#!">Shipping & Returns</a></li>
+                  <li><a href="#!">Store Locator</a></li>
+                </ul>
+              </div>
+              <div class="footer__nav">
+                <h4>Company</h4>
+                <ul>
+                  <li><a href="#!">About</a></li>
+                  <li><a href="#!">Contact</a></li>
+                  <li><a href="#!">Blog</a></li>
+                  <li><a href="#!">Press</a></li>
+                </ul>
+              </div>
+          </div>
+        </div>
+
+        <div class="footer__policy">
+          <ul>
+            <li><a class="de" href="#!">/de · swa/</a></li>
+            <li><a class="r" href="#!">®2021 Сocktail</a></li>
+          </ul>
+          <ul class="footer__policy__list">
+            <li><a href="#!">Privacy policy</a></li>
+            <li><a href="#!">Terms of use</a></li>
+            <li><a href="#!">AMASS</a></li>
+          </ul>
+        </div>
+
+      </div>
+    </footer>
+  </body>
+</html>

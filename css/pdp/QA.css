@@ -1,0 +1,99 @@
+.QA {
+  background-color: var(--black);
+  padding: 8rem 0;
+}
+
+.QA__grid {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.QA__title {
+  width: 33.5rem;
+  font-family: "Philosopher";
+  font-style: normal;
+  font-weight: 700;
+  font-size: 70px;
+  line-height: 78px;
+
+  color: #eae5dd;
+}
+.QA__wrapper {
+  width: 72rem;
+  height: 30rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  /* border-bottom: 1px solid #fff; */
+}
+
+.QA__wrapper .ui-accordion-header-icon {
+  display: none;
+}
+.QA__wrapper .ui-state-default {
+  background-color: transparent;
+  border: none;
+}
+.QA__wrapper h3 {
+  font-family: "Montserrat";
+  font-style: normal;
+  font-weight: 700;
+  font-size: 12px;
+  line-height: 15px;
+  letter-spacing: 0.1em;
+  text-transform: uppercase;
+
+  color: #ffffff;
+
+  border-top: 1px solid #ffffff !important;
+  border-radius: 0;
+  padding-top: 1.6rem !important;
+  padding-bottom: 1.6rem !important;
+}
+.QA__wrapper p {
+  font-family: "Montserrat";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 13px;
+  line-height: 170%;
+  /* or 22px */
+
+  color: #ffffff;
+}
+.QA__wrapper .ui-widget-content {
+  background-color: transparent;
+  border: none;
+}
+
+/* media */
+
+@media (max-width: 600px) {
+  .QA__grid {
+    flex-direction: column;
+  }
+  .QA {
+    padding: 4rem 0;
+  }
+  .QA__wrapper {
+    width: 100%;
+    height: 44rem;
+    margin-top: 2.8rem;
+    
+  }
+
+  .ui-accordion .ui-accordion-content {
+    padding: 1em 1em 0 !important;
+    border-top: 0;
+    overflow: auto;
+    height: auto !important;
+}
+  
+
+  .QA__title {
+    width: 100%;
+    font-weight: 700;
+    font-size: 3.2rem;
+    line-height: 3.6rem;
+    text-align: center;
+  }
+}

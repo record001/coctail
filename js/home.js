@@ -20,7 +20,7 @@ function renderProductsToSlider() {
     document.querySelector(".swiper-wrapper").appendChild(productFrag)
 }
 renderProductsToSlider()
-
+  
 
 
  new Swiper(".mySwiper", {

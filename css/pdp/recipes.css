@@ -115,6 +115,49 @@
   display: none;
 }
 .recipes__slider .swiper-button-next {
-  right: 227px;
-  left: auto;
+  /* right: 380px; */
+  left: 98rem;
+}
+
+
+/* media */
+
+@media(max-width:600px) {
+  .recipes__slider .swiper-button-next {
+    display: none;
+  }
+  .recipes__slider .swiper-button-prev {
+    display: none;
+  }
+  .recipes__slider .swiper-pagination {
+    display: block;
+  }
+  .recipes__slider .swiper-slide {
+    width:100%   !important;
+    
+}
+.recipes__slider  {
+  padding-left: 1.6rem;
+  height: 73rem;
+}
+.card__img-bg {
+  width: 27.8rem;
+}
+.recipes__card .card__img .funkin {
+  top: 11%;
+  left: 48.5%;
+  width: 216px;
+}
+
+.recipes__card  {
+  flex-direction: column;
+}
+.card__content h2 {
+  font-size: 2.8rem;
+}
+.card__content {
+  margin-top: 1.6rem;
+  margin-left: 0;
+  
+}
 }
